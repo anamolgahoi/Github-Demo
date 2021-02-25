@@ -1,0 +1,55 @@
+, to do-
+installing AWS CLI (install and configure)
+
+
+AWS Exp:
+Spinning up AWS EC2 and RDS as per requirement
+Creating S3 buckets and configuring life cycle management
+installing AWS cli and running commands - Start, stop, restart EC2
+	- We schedule start up and shutdown scripts non prod to save cost
+aws ec2 stop-instances i-989d89d8s98d
+create ec2 through cli
+create s3 bucket through cli
+how to schedule scripts on Windows and on Linux
+
+Install tomcat using zip package - download, extract, set env variables
+run jenkins.war in tomcat/webapps - download jenkin.war
+localhost:8080/
+Create a freestyle jenkins job running your start stop script. - while building a job we have to write script which can
+open any application when we will build our job.
+
+Worked on Java and .Net environment
+worked on application servers like IIS and Tomcat
+creating jobs in jenkins and creating EC2 and RDS on AWS
+	- Using AWS Cli scripts
+	- Using AWS Plugin
+
+Do the above on Linux and Windows
+
+1.install aws ec2 jenkins plugin in system
+2.how to create node
+3.in aws account setup jenkins
+how to create shell file (linux) and powershell (windows)
+
+
+Questions:
+Jenkins
+Basically there are jobs for two purposes
+1. Infrastructure provisioning
+	Creating EC2, RDS, S3 etc
+	Installing and configuring middleware on EC2. For ex. Tomcat, IIS.
+2. Build and Deployment?	Automating Infrastructure provisioning, configuration and middleware installation using Jenkins pipelines
+?	Creating Jenkins pipelines for continuous integration and continuous deployment of code
+?	Setting up and monitoring infrastructure and applications using NewRelic and integrating it with ServiceNow for automating incident creation
+	Compiling code
+	deploying the artifacts
+
+
+
+Jenkins:
+
+Master Server: Where you install Jenkins application. In Anmols case [Tomcat(Jenkins)]. Here you have only Jenkins.
+create node server
+Node/Slave Server: Where you install all the required software to run your scripts. If you are running AWS CLI, 
+you will need to configure AWS on node server. Same way you install all the middleware to compile the code and run the scripts.
+**** You script always runs on Node not on Master. ****
